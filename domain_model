@@ -1,0 +1,42 @@
+Objects:
+
+ship; size, direction, ability to fire
+board; constraints/size/boundaries, coordinates/location
+
+
+Messages:
+
+ship:
+  ship size
+  ship change/choose direction/position
+
+board:
+  won or lost
+  overview of hits/misses
+  two-player game, two boards
+  feedback from firing
+  ability to fire
+
+  "Board
+    reports missed hit when no ship at position
+    can have a ship
+    can receive a hit on a ship
+    can report if all ships are sunk
+    can report if not all ships are sunk
+
+  Player
+    can lose
+    can place ships
+    can tell us when a ship is hit
+    can report hit positions
+    can report miss positions
+    will lose if all ships are hit
+
+  Ship
+    has a position when created
+    can be hit
+    will record number of hits
+    can be missed
+    will not be hit when it is missed
+    is not sunk initially
+    can be sunk"
